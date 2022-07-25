@@ -19,6 +19,7 @@ export default function Task({
           name='checked'
           id={`archiveTask-${id}`}
           checked={state === 'TASK_ARCHIVED'}
+          style={{ background: 'red' }}
         />
         <span className='checkbox-custom' onClick={() => onArchiveTask(id)} />
       </label>
